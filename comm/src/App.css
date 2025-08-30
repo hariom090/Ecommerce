@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+body{font-family: "Roboto", sans-serif;}
+.container-fluid{padding: 0px 0px;}
+.transition{transition: all 0.3s ease-in-out; }
+.cursor{cursor: pointer;}
+.bg-g,.bg-success{background: #3bb77e !important;}
+.text-g{color: #3bb77e;}
+
+.hd{font-size: 38px; font-weight: 600;}
+
+

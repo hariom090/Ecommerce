@@ -1,0 +1,178 @@
+/* ===== Container ===== */
+.account-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.account-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* ===== Account Details ===== */
+.account-details {
+  background: #f1f5f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  border: 1px solid #e2e8f0;
+}
+
+.account-details p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.edit-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #1976d2 !important;
+  color: #fff !important;
+  font-weight: 500;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  transition: 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: #125aa0 !important;
+}
+
+/* ===== Order History ===== */
+.order-history {
+  margin-bottom: 2rem;
+}
+
+.order-history h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #1e293b;
+}
+
+/* ===== Address Section ===== */
+.addressSection {
+  margin-bottom: 2rem;
+}
+
+.addressSection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.addressList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+/* Address Card */
+.addressCard {
+  background: #ffffff;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.addressCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.addressInfo p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+/* Action Buttons */
+.addressActions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.edit-address-btn {
+  color: #3b82f6 !important; /* blue */
+  transition: 0.2s ease;
+}
+
+.edit-address-btn:hover {
+  background: rgba(59, 130, 246, 0.1) !important;
+}
+
+.delete-btn {
+  color: #ef4444 !important; /* red */
+  transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: rgba(239, 68, 68, 0.1) !important;
+}
+
+
+/* ===== Logout Button ===== */
+.logout-btn {
+  display: block !important;
+  margin: 2rem auto 0 !important;
+  padding: 0.7rem 1.6rem !important;
+  border-radius: 10px !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  background: #e63946 !important;
+  color: #fff !important;
+  border: none !important;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #b91c1c !important;
+}
+
+/* ===== Error Message ===== */
+.error-msg {
+  color: #e63946;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .account-container {
+    padding: 1.2rem;
+  }
+
+  .account-details {
+    font-size: 0.95rem;
+  }
+
+  .addressList {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-btn,
+  .logout-btn {
+    width: 100% !important;
+  }
+}

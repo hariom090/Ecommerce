@@ -1,0 +1,72 @@
+.addAddress {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.addAddress h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.addressForm {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.addressForm .MuiTextField-root {
+  width: 100%;
+}
+
+.addressForm button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .addAddress {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .addAddress h2 {
+    font-size: 1.5rem;
+  }
+
+  .addressForm {
+    gap: 1rem;
+  }
+
+  .addressForm button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .addAddress {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .addAddress h2 {
+    font-size: 1.3rem;
+  }
+
+  .addressForm {
+    gap: 0.8rem;
+  }
+
+  .addressForm button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}

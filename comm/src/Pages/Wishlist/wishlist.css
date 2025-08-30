@@ -1,0 +1,131 @@
+.wishlist {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wishlist h2 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.wishlistItems {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wishlistItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 12px 15px;
+  transition: box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.wishlistItem:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.wishlistItem img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.wishlistDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0; /* allow text ellipsis */
+}
+
+.wishlistDetails h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.old-price {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.wishlistActions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.wishlistActions button {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 600px) {
+  .wishlistItem {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .wishlistItem img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .wishlistDetails h4 {
+    font-size: 0.9rem;
+  }
+
+  .price-container {
+    font-size: 0.8rem;
+  }
+
+  .wishlistActions {
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  .wishlistActions button {
+    flex: 1;
+    font-size: 0.75rem;
+    padding: 4px 6px;
+      white-space: normal; /* allow wrapping */
+  line-height: 1.2;
+  text-align: center;
+  }
+}
+
+

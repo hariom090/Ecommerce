@@ -1,0 +1,169 @@
+/* Dropdown container */
+.tab_ {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown menu */
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 5px;
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  min-width: 180px;
+  padding: 5px 0;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Hidden dropdown */
+.dropdownMenu.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+/* Dropdown items */
+.dropdownMenu li {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px 8px 20px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.dropdownMenu li:hover {
+  background-color: #b0e5c2;
+}
+
+/* Listing structure */
+.listing {
+  width: 100%;
+  padding: 45px 0;
+}
+
+.breadcrumb {
+  width: 100%;
+  padding: 45px 45px;
+  background: #d8f1e5;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.breadcrumb h1 {
+  color: #000;
+  opacity: 0.8;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.breadcrumb ul li {
+  margin-right: 20px !important;
+}
+
+.breadcrumb ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.sideBarWrapper {
+  max-width: 20%;
+}
+
+.right-content {
+  max-width: 80%;
+}
+
+.sideBarWrapper h3 {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.sideBarWrapper h3:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #f0f0f0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.sideBarWrapper h3::before {
+  content: "";
+  width: 20%;
+  height: 3px;
+  background: #b0e5c2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.right-content .topStrip {
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+.right-content .topStrip p {
+  font-size: 20px;
+}
+
+.right-content .topStrip .tab_ Button {
+  background: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  padding: 7px 20px !important;
+  text-transform: capitalize !important;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Product grid */
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card-wrapper {
+  position: relative;
+}
+
+.product-link-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  text-decoration: none;
+}
+
+/* Fix clickable overlay while keeping buttons interactive */
+.product-card-wrapper > * {
+  position: relative;
+  z-index: 10;
+}
+
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.product-link:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,19 @@
+
+.sideBarWrapper .sidebar .card{padding: 25px; border-radius: 10px !important; margin-bottom: 30px;}
+
+.sideBarWrapper .sidebar .card .catList .catItem{padding: 10px; border: 2px solid rgba(0,0,0,0.1); cursor: pointer; justify-content: space-between ;
+margin: 4px 0px ; border-radius: 5px; transition: all 0.3s ease-in-out;}
+.sideBarWrapper .sidebar .card .catList .catItem:hover{border: 2px solid rgba(0,0,0,0.2);}
+.sideBarWrapper .sidebar .card .catList .catItem h4{color: #000; font-size: 18px;}
+.sideBarWrapper .sidebar .card .catList .catItem .rounded-circle{background: #BCE3C9; width: 40px; height: 40px; }
+.priceRange{ justify-content: space-between;}
+.sidebar .priceRange span{font-size: 15px;}
+
+.filters{padding-top: 20px; }
+.filters ul{padding: 0px ;max-height: 150px; overflow-y: scroll;}
+.filters ul::-webkit-scrollbar{width: 10px !important;}
+.filters ul::-webkit-scrollbar-thumb{background: #ccc !important;}
+.filters ul li{width: 100%; margin-bottom: 0px; list-style: none;}
+.btn{padding: 0; border: #ccc;}
+.card .btn Button a{font-size: 10px;}
+.card .btn Button{  color: white;}
